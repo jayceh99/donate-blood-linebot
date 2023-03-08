@@ -3,6 +3,6 @@
 	<channel_secret>對應line bot 的 channel secret</channel_secret>
 	<channel_access_token>對應line bot 的 channel access token</channel_access_token>
 	<your_user_ID>對應line bot 的 your user ID</your_user_ID>
-	<location>想查詢的區域 e.g. 信義區</location>
+	<location>想快速查詢的區域 e.g. 台北市信義區(臺or台 都通用)</location>
 	<gcp_line_push_message_path>gcp_line_push_message.py 的位置 用於自動推播</gcp_line_push_message_path>
 </data>

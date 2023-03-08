@@ -1,8 +1,6 @@
 from datetime import datetime
 import time
 
-
-
 def init_time(tmp_time):
     try:
         tmp_time = str(tmp_time)
