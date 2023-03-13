@@ -52,28 +52,41 @@ def handle_message(event):
     input_text = event.message.text
 
     if input_text == '初始時間':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='第一次使用請輸入上一次捐血日期共8碼 e.g. 20230307'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='第一次使用請輸入上一次捐血量以及日期並用,分開 e.g. 500,20230307'))
 
-    elif str.isdigit(input_text) == True :
+
+    elif (input_text[0:3] == "250"  or input_text[0:3] == "500") and (str.isdigit(input_text[4:]) == True  and len(input_text[4:]) == 8):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=init_time.init_time(input_text)))
+        
+
 
     elif input_text == '更新時間':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=update_time.update_time()))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='請輸入這次的@捐血量 e.g. @250'))
 
-    elif input_text == '查詢地點':
+
+    elif input_text == "@250"  or input_text == "@500":
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=update_time.update_time(input_text)))
+
+
+    elif input_text == '查詢預設地點':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=location_inquiry.location_inquiry(location)))
+        
 
     elif input_text == '查詢特定地點':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='請輸入縣市名稱 e.g. 臺北市 or 台北市'))
 
+
     elif input_text[0:3] in ('台北市,臺北市,新北市,宜蘭縣,花蓮縣,金門縣,連江縣,基隆市,桃園市,新竹縣,苗栗縣,新竹市,台中市,臺中市,彰化縣,南投縣,雲林縣,嘉義縣,台南市,臺南市,高雄市,屏東縣,台東縣,臺東縣,澎湖縣,嘉義市'):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=location_inquiry.location_inquiry(input_text)))    
+
 
     elif input_text == '查詢時間':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=time_inquiry.time_inquiry()))
 
+
     else :
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='初始時間 , 更新時間 , 查詢地點 , 查詢時間'))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='格式輸入錯誤\n說明:\n第一次使用請輸入  初始時間\n若當日捐完血請輸入  更新時間\n若想查詢上次捐血時間請輸入 查詢時間\n若想查詢特定捐血地點請輸入  查詢特定地點\n若想查詢預設的捐血地點請輸入 查詢預設地點'))
+
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
