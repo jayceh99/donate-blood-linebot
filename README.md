@@ -5,7 +5,7 @@
 >>[可參考這裡建立免費的GCP雲端主機](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR "Title") 
 
 >>或是參考我的作法
-
+>>
 >>[按這裡前往GCP首頁](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR "Title") 
 >>點選
 ![建立](https://user-images.githubusercontent.com/104083191/224921561-d305e544-8e8a-4ee9-a51f-96186119dea2.PNG)
