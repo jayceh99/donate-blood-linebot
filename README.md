@@ -19,7 +19,7 @@
 >>
 >>點選變更更改硬碟大小與系統
 >>
->>![before](https://user-images.githubusercontent.com/104083191/224924766-3323186b-3576-4b91-bf4b-fde37a51f89a.PNG)
+>>![before](https://user-images.githubusercontent.com/104083191/224927851-92f7bd37-1911-49ce-9f56-f3c16f9f8acf.PNG)
 >>
 >>更改硬碟大小與系統如下圖
 >>
