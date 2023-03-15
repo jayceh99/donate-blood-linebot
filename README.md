@@ -63,14 +63,14 @@
 >  
 >```sudo apt update && sudo apt upgrade```
 >
->在視窗中輸入把專案抓回來
+>把專案抓回來在視窗中輸入
 >
 >```sudo git clone https://github.com/jayceh99/donate_blood_linebot.git```
 >
 >(或是要把專案叉回去![擷取](https://user-images.githubusercontent.com/104083191/225216495-589561e5-4113-477e-8016-079df7ee23df.PNG)
 自己的git hub也可以！ 建議叉回去後續想要自己修改也會比較方便 ！)
 >
->更改專案佔存的資料夾讀寫權限,在視窗中輸入
+>更改資料夾讀寫權限,在視窗中輸入
 >
 >```sudo chmod 755 /opt/ ```
 
