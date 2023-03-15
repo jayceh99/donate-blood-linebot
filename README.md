@@ -142,7 +142,7 @@
 >```sudo wget 127.0.0.1 http://127.0.0.1:4040/api/tunnels```
 >
 >查看外部https網址
->```vim tunnels```
+>```cat tunnels```
 >
 >從裡面找到```public_url```後面的https網址
 >
