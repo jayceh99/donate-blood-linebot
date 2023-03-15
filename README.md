@@ -6,7 +6,7 @@
 
 >>或是參考我的作法
 >>
->>[按這裡前往GCP首頁](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR "Title") 
+>>[按這裡前往GCP首頁](https://console.cloud.google.com/ "Title") 
 >>點選
 ![建立](https://user-images.githubusercontent.com/104083191/224921561-d305e544-8e8a-4ee9-a51f-96186119dea2.PNG)
 >>建立VM
@@ -45,10 +45,19 @@
 >Step2 申請屬於自己的line bot 
 >>[可參考這裡建立line bot](https://ithelp.ithome.com.tw/articles/10215268 "title")
 
-*****
->Step3 把專案叉回自己的git hub 
-右上角按一下這個 叉回去 
-![擷取](https://user-images.githubusercontent.com/104083191/224917150-12d8ab3c-9972-4e87-b266-4e81cc13aad4.PNG)
+>>網路上有相當多教學就不再贅述
 
 *****
->Step4 
+>Step3 建立環境
+>>[按這裡前往GCP首頁](https://console.cloud.google.com/ "Title") 
+>>
+>>選擇VM執行個體
+>>
+>>![2](https://user-images.githubusercontent.com/104083191/225214892-2e97bd37-dceb-48a7-8c1a-21146ea73574.PNG)
+>>
+>>點選SSH
+>>![3](https://user-images.githubusercontent.com/104083191/225215179-83ed0a55-dc66-4b8a-97f6-00e3419580c4.PNG)
+>>在視窗中輸入  sudo apt update
+
+
+
