@@ -75,9 +75,11 @@
 >```sudo chmod 755 /opt/ ```
 >
 >移到專案資料夾內
+>
 >```cd donate_blood_linebot/```
 >
 >安裝套件管理器
+>
 >```sudo apt install pip```
 >
 >安裝所需套件
