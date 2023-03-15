@@ -126,3 +126,36 @@
 >``` curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok ```
 >
 >[並到官網申請一組金鑰](https://ngrok.com/ "Title") 
+>
+>![擷取](https://user-images.githubusercontent.com/104083191/225240083-d518d5d2-40d5-42f3-9aa1-17ac0a868c6b.PNG)
+>
+>記住被碼掉的部分(這個是金鑰)
+>
+>回到GCP的VM裡,輸入
+>
+>```ngrok authtoken 你的金鑰 ```
+
+>啟動ngrok 並放到背景運行
+>```nohup ngrok http 5000 &```
+>
+>將ngrok連線資訊抓出來
+>```sudo wget 127.0.0.1 http://127.0.0.1:4040/api/tunnels```
+>
+>查看外部https網址
+>```vim tunnels```
+>
+>從裡面找到```public_url```後面的https網址
+>
+>把他貼到line bot 內Messaging API 的 Webhook URL
+>
+>如下圖
+>![擷取](https://user-images.githubusercontent.com/104083191/225245052-13941756-b4ff-4092-b0f4-74ccae9bdb25.PNG)
+>
+>好了之後點update再點Verify驗證,跳出Success的視窗,代表機器人已經上線囉
+>
+>之後就可以打開line開始初始化囉~
+
+
+
+
+
