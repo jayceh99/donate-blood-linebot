@@ -59,18 +59,18 @@
 >
 >>![3](https://user-images.githubusercontent.com/104083191/225215179-83ed0a55-dc66-4b8a-97f6-00e3419580c4.PNG)
 >>
->更新軟體包(?)在視窗中輸入
+>更新軟體包(?)
 >  
 >```sudo apt update && sudo apt upgrade```
 >
->把專案抓回來在視窗中輸入
+>把專案抓回來
 >
 >```sudo git clone https://github.com/jayceh99/donate_blood_linebot.git```
 >
 >(或是要把專案叉回去![擷取](https://user-images.githubusercontent.com/104083191/225216495-589561e5-4113-477e-8016-079df7ee23df.PNG)
 自己的git hub也可以！ 建議叉回去後續想要自己修改也會比較方便 ！)
 >
->更改資料夾讀寫權限,在視窗中輸入
+>更改資料夾讀寫權限
 >
 >```sudo chmod 755 /opt/ ```
 >
@@ -84,7 +84,36 @@
 >
 >安裝所需套件
 >
->```sudo pip install flask line-bot-sdk python-dateutil lxml apscheduler  ```
-
-
-
+>```sudo pip install flask line-bot-sdk python-dateutil lxml apscheduler```
+>
+>修改設定檔
+>
+>```sudo vim config.xml```
+>
+>按i進入編輯,前三項資訊可以在LINE Developers裡面找到
+>
+>Channel secret跟Your user ID 在Basic settings裡面
+>
+>>![擷取](https://user-images.githubusercontent.com/104083191/225235275-e0bcda2c-8f97-4725-9e63-7413b8fefece.PNG)
+>
+>Channel access token在Messaging API裡面
+>
+>>![擷取](https://user-images.githubusercontent.com/104083191/225235795-bab81cd7-8ae0-4d13-b349-db8301f4ac9a.PNG)
+>
+>最後location就填上你最常出沒的地方,像我住在林口我就填    
+>```新北市林口區```
+>
+>整份文件填起來像這樣
+>```
+> <?xml version="1.0"?>
+> <data>
+>        <channel_secret>xxxxxxxxxxxxxxxxxxxxxxxxxx</channel_secret>
+>        <channel_access_token>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</channel_access_token>
+>        <your_user_ID>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</your_user_ID>
+>        <location>新北市林口區</location>
+> </data>
+>```
+>
+>填完後按鍵盤左上角的esc退出編輯,並輸入```:wq```儲存並離開
+## Step4 啟動line bot
+>
