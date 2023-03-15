@@ -73,7 +73,16 @@
 >更改資料夾讀寫權限,在視窗中輸入
 >
 >```sudo chmod 755 /opt/ ```
-
+>
+>移到專案資料夾內
+>```cd donate_blood_linebot/```
+>
+>安裝套件管理器
+>```sudo apt install pip```
+>
+>安裝所需套件
+>
+>```sudo pip install flask line-bot-sdk python-dateutil lxml apscheduler  ```
 
 
 
