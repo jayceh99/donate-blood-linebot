@@ -1,5 +1,6 @@
-# Ubuntu 20.04
-# Python 3.10.9
+# donate_blood_linebot 個人化捐血機器人
+## Ubuntu 20.04
+## Python 3.10.9
 *****
 ## Step1 建立自己的雲端主機
 >[可參考這裡建立免費的GCP雲端主機](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR) 
@@ -115,6 +116,7 @@
 >```
 >
 >填完後按鍵盤左上角的esc退出編輯,並輸入```:wq```儲存並離開
+*****
 ## Step4 啟動line bot
 >直接輸入
 >```sudo nohup python3 main.py & ```
@@ -161,6 +163,7 @@
 >
 >輸入 ? 取得line bot的使用說明
 >
+*****
 ## step5 讓line bot自動推播
 >回到專案資料夾內
 >
@@ -174,7 +177,7 @@
 
 以上就大功告成囉~
 捐血一袋,救人一命,每次捐完血都要給自己一個讚
-
+*****
 ## 後記
 >若覺得每次都要打一堆字才能做查詢或時期他動作,可以到line bussiness裡面新增圖文選單
 >
