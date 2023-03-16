@@ -2,7 +2,7 @@
 # Python 3.10.9
 *****
 ## Step1 建立自己的雲端主機
->[可參考這裡建立免費的GCP雲端主機](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR "Title") 
+>[可參考這裡建立免費的GCP雲端主機](https://ithelp.ithome.com.tw/articles/10276289?sc=iThomeR) 
 
 >或是參考我的作法
 >
@@ -43,13 +43,13 @@
 >
 *****
 ## Step2 申請屬於自己的line bot 
->[可參考這裡建立line bot](https://ithelp.ithome.com.tw/articles/10215268 "title")
+>[可參考這裡建立line bot](https://ithelp.ithome.com.tw/articles/10215268)
 >
 >網路上有相當多教學就不再贅述
 >
 *****
 ## Step3 建立環境
->[按這裡前往GCP首頁](https://console.cloud.google.com/ "Title") 
+>[按這裡前往GCP首頁](https://console.cloud.google.com/) 
 >
 >選擇VM執行個體
 >
@@ -122,12 +122,12 @@
 >讓主程式在背景運作
 >
 >下載ngrok
-
+>
 >``` curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok ```
 >
->[並到官網申請一組金鑰](https://ngrok.com/ "Title") 
+>[並到官網申請一組金鑰](https://ngrok.com/) 
 >
->![擷取](https://user-images.githubusercontent.com/104083191/225240083-d518d5d2-40d5-42f3-9aa1-17ac0a868c6b.PNG)
+>>![擷取](https://user-images.githubusercontent.com/104083191/225240083-d518d5d2-40d5-42f3-9aa1-17ac0a868c6b.PNG)
 >
 >記住被碼掉的部分(這個是金鑰)
 >
@@ -153,26 +153,41 @@
 >
 >如下圖
 >
->![擷取](https://user-images.githubusercontent.com/104083191/225245052-13941756-b4ff-4092-b0f4-74ccae9bdb25.PNG)
+>>![擷取](https://user-images.githubusercontent.com/104083191/225245052-13941756-b4ff-4092-b0f4-74ccae9bdb25.PNG)
 >
 >好了之後點update再點Verify驗證,跳出Success的視窗,代表機器人已經上線囉
 >
 >之後就可以打開line開始初始化囉~
-
+>
+>輸入 ? 取得line bot的使用說明
+>
 ## step5 讓line bot自動推播
-
->初始化過後,只要能夠再次捐血的時間一到,每個禮拜天早上8點就會開始自動推播(auto_push_info.py內可更改時間)接下來一個禮拜(日~六)
->
->最常出沒的區域(設定檔內可以更改)哪裡有捐血車囉
->
 >回到專案資料夾內
->
->``` cd donate_blood_linebot/ ```
 >
 >把自動推播的程式叫起來並放到背景運行
 >
 >```nohup python3 auto_push_info.py & ```
-
+>
+>初始化過後,只要能夠再次捐血的時間一到,每個禮拜天早上8點就會開始自動推播(auto_push_info.py內可更改時間)接下來一個禮拜(日~六)
+>
+>最常出沒的區域(設定檔內可以更改)哪裡有捐血車囉
 
 以上就大功告成囉~
 捐血一袋,救人一命,每次捐完血都要給自己一個讚
+
+## 後記
+>若覺得每次都要打一堆字才能做查詢或時期他動作,可以到line bussiness裡面新增圖文選單
+>
+>[line bussiness](https://tw.linebiz.com/login/)
+>
+>點這裡進到圖文選單的設計頁面
+>
+>>![擷取](https://user-images.githubusercontent.com/104083191/225526168-01e466c9-a577-4800-8bce-a5c2ef33ffd8.PNG)
+>
+>設計完會變這樣
+>
+>>![335498089_600729345439623_3036595022582419341_n](https://user-images.githubusercontent.com/104083191/225527163-5657b42b-c638-4ced-8573-cb5f037c0bb1.jpg)
+>
+>我感覺是挺方便的啦 （＾ω＾）
+
+
