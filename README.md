@@ -114,8 +114,8 @@
 >
 >填完後按鍵盤左上角的esc退出編輯,並輸入```:wq```儲存並離開
 *****
-## Step4 啟動line bot
->直接輸入
+## Step4 啟動line bot並安裝ngrok
+>回到專案資料夾,直接輸入
 >```sudo nohup python3 main.py & ```
 >
 >讓主程式在背景運作
