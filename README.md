@@ -1,4 +1,4 @@
-# donate_blood_linebot 通知捐血機器人
+# donate_blood_linebot 捐血機器人
 ## Ubuntu 20.04
 ## Python 3.10.9
 *****
