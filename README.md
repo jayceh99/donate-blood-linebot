@@ -59,7 +59,7 @@
 >>
 >更新軟體包(?)
 >  
->```sudo apt update && sudo apt upgrade```
+>```sudo apt update && sudo apt upgrade -y```
 >
 >把專案抓回來
 >
@@ -75,7 +75,7 @@
 >
 >安裝套件管理器
 >
->```sudo apt install pip```
+>```sudo apt install pip -y```
 >
 >安裝所需套件
 >
