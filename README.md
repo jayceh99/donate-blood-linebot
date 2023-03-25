@@ -26,7 +26,7 @@
 >更改硬碟大小與系統如下圖
 >
 >
->>![after](https://user-images.githubusercontent.com/104083191/224925120-32d91f02-f4d4-4d28-ae19-33e10d78e072.PNG)
+>>![擷取](https://user-images.githubusercontent.com/104083191/227667575-83e120c0-619b-4ae3-b506-05f5aca41a44.JPG)
 >
 >
 >允許HTTP與HTTPS流量
