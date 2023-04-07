@@ -12,7 +12,7 @@ from linebot.models import (
 #import requests
 import os
 import xml.dom.minidom
-import init_time , location_inquiry , time_inquiry , update_time
+import init_time , location_inquiry , time_inquiry , update_time , blood_stock
 app = Flask(__name__)
 
 path = r'config.xml'
@@ -82,9 +82,12 @@ def handle_message(event):
 
     elif input_text == '查詢時間':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=time_inquiry.time_inquiry()))
-
+    
+    elif input_text == '查詢血液庫存':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=blood_stock.blood_stock()))
+        
     elif input_text == '?':
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='使用說明:\n第一次使用請輸入  初始時間\n若當日捐完血請輸入  更新時間\n若想查詢上次捐血時間請輸入 查詢時間\n若想查詢特定捐血地點請輸入  查詢特定地點\n若想查詢預設的捐血地點請輸入 查詢預設地點'))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='使用說明:\n第一次使用請輸入  初始時間\n若當日捐完血請輸入  更新時間\n若想查詢上次捐血時間請輸入 查詢時間\n若想查詢特定捐血地點請輸入  查詢特定地點\n若想查詢預設的捐血地點請輸入 查詢預設地點\n若想查詢血液庫存量請輸入 查詢血液庫存'))
         
     else :
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text='格式輸入錯誤\n或輸入?取得使用說明'))
