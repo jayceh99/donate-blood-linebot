@@ -61,6 +61,10 @@
 >  
 >```sudo apt update && sudo apt upgrade -y```
 >
+>更改時區
+>
+>```sudo timedatectl set-timezone Asia/Taipei```
+>
 >把專案抓回來
 >
 >```sudo git clone https://github.com/jayceh99/donate_blood_linebot.git```
