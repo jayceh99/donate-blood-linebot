@@ -117,7 +117,7 @@
 *****
 ## Step4 啟動line bot並安裝ngrok
 >回到專案資料夾,直接輸入
->```sudo nohup python3 main.py & ```
+>```nohup sudo python3 main.py & ```
 >
 >讓主程式在背景運作
 >
