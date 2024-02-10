@@ -151,7 +151,7 @@
 >
 >把他貼到line bot 內Messaging API 的 Webhook URL最後面加上/callback
 >
->如下圖(2024/02/10 ngrok給的`public_url 結尾已經從ngrok.ip改成ngrok-free.app了! 不過還是一樣能用)
+>如下圖(2024/02/10 ngrok給的`public_url'結尾已經從ngrok.io改成ngrok-free.app了! 不過還是一樣能用)
 >
 >>![擷取](https://user-images.githubusercontent.com/104083191/225245052-13941756-b4ff-4092-b0f4-74ccae9bdb25.PNG)
 >
