@@ -202,3 +202,6 @@
 >(profile = line_bot_api.get_profile(userid) #這個是取得聯絡人所有資訊(使用者名字、使用者大頭照網址、使用者自介內容))
 >
 >取得個人的userid，再修改其他相關副程式就可以讓一個機器人服務多人，但本專案運行於免費的GCP雲端主機，有每月的流量限制，所以沒辦法開放給多人使用
+>
+>group = event.source.group_id  可針對群組取得群組ID 用於機器人在群組裡發送訊息(可以拿來取代line notify)
+
